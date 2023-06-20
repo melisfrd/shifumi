@@ -37,6 +37,7 @@ button.addEventListener("click", () => {
     (p === "katana" && c === "flower")
   ) {
     pv1.appendChild(span);
+  } else if (p === c) {
   } else {
     pv2.appendChild(span);
   }
