@@ -1,0 +1,11 @@
+header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    margin-left: 20px;
+    color: $color3;
+    font-size: 4rem;
+  }
+}

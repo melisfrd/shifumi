@@ -1,0 +1,143 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "jap1";
+  src: url(../fonts/JapanRichRegular-vm7G9.ttf);
+}
+@font-face {
+  font-family: "jap2";
+  src: url(../fonts/Japonesa-rwYK.otf);
+}
+body {
+  background: url(../img/bg.jpg) center/cover;
+  height: 100vh;
+  width: 100vw;
+  font-family: "jap1";
+}
+body main {
+  margin: 0 auto;
+  width: 90%;
+}
+body main section {
+  height: 35vh;
+  display: flex;
+  align-items: center;
+}
+body main section:nth-child(3) {
+  height: 20vh;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+header h1 {
+  margin-left: 20px;
+  color: #0D5150;
+  font-size: 4rem;
+}
+
+.players {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.players .player {
+  width: 40%;
+  text-align: center;
+}
+.players .player .pv {
+  background-color: rgba(255, 255, 255, 0.5490196078);
+  border: 2px solid #0D5150;
+  border-radius: 100px 0 100px 0;
+  height: 20px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.players .player .spanColor {
+  height: 20px;
+  background-color: #516C63;
+}
+.players .player p {
+  margin: 20px 0;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.players .player .choice {
+  border: 3px dotted #516C63;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.players .player .choice img {
+  height: 70px;
+}
+
+.shifumiSigns {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.shifumiSigns img {
+  height: 85px;
+  filter: invert(100%);
+  transition: 0.2s ease;
+}
+.shifumiSigns img:nth-child(2n+1) {
+  transform: translateY(50px);
+}
+.shifumiSigns img:nth-child(2) {
+  margin: 0 100px;
+  transform: translateY(-30px);
+}
+.shifumiSigns img:hover {
+  cursor: pointer;
+  filter: invert(0);
+}
+
+.btn {
+  height: 35vh;
+  text-align: center;
+}
+.btn button {
+  background-color: rgba(255, 255, 255, 0.6039215686);
+  border: 3px solid #516C63;
+  border-radius: 10px;
+  margin-top: 50px;
+  padding: 10px 60px;
+  font-weight: bold;
+  font-family: "jap1";
+  font-weight: lighter;
+  letter-spacing: 3px;
+}
+.btn button:hover {
+  cursor: pointer;
+}
+
+body {
+  position: relative;
+}
+
+.win {
+  font-size: 3rem;
+  text-align: center;
+  background-color: #516C63;
+  padding: 30px 100px;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  display: none;
+}/*# sourceMappingURL=index.css.map */

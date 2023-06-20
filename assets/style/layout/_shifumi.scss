@@ -1,0 +1,25 @@
+.shifumiSigns {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  
+
+  img {
+    height: 85px;
+    filter: invert(100%);
+    transition: 0.2s ease;
+    
+    &:nth-child(2n+1) {
+      transform: translateY(50px);
+    }
+    &:nth-child(2) {
+      margin: 0 100px;
+      transform: translateY(-30px);
+    }
+
+    &:hover {
+      cursor: pointer;
+      filter: invert(0);
+    }
+  }
+}

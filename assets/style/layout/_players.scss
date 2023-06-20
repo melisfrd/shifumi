@@ -1,0 +1,43 @@
+.players {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  .player {
+    width: 40%;
+    text-align: center;
+
+    .pv {
+      background-color: #ffffff8c;
+      border: 2px solid $color3;
+      border-radius: 100px 0 100px 0;
+      height: 20px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+    }
+    .spanColor {
+      height: 20px;
+      background-color: $color2;
+    }
+    p {
+      margin: 20px 0;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+    .choice {
+      border: 3px dotted $color2;
+      border-radius: 10px;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        height: 70px;
+      }
+    }
+  }
+}
