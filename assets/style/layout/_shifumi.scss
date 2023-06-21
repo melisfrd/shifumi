@@ -1,25 +1,57 @@
 .shifumiSigns {
   margin: 0 auto;
   width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   
-
-  img {
-    height: 85px;
-    filter: invert(100%);
-    transition: 0.2s ease;
+  .bg-img {
+    background-color: #53796ed2;
+    border-radius: 300px;
+    width: max-content;
+    height: max-content;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
-    &:nth-child(2n+1) {
-      transform: translateY(50px);
-    }
-    &:nth-child(2) {
-      margin: 0 100px;
-      transform: translateY(-30px);
+
+    &:nth-child(2){
+      margin: 0 50px;
     }
 
     &:hover {
       cursor: pointer;
-      filter: invert(0);
+    }
+
+    img {
+      height: 50px;
+      filter: invert(100%);
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+      }
+      &:active{
+        height: 30px;
+      }
+    }
+
+    @media screen and (max-width: 960px) and (max-height: 540px) {
+      width: 70px;
+      height: 70px;
+  
+      img {
+        height: 30px;
+      }
+    }
+    @media screen and (max-width: 360px) and (max-height: 640px) {
+      width: 60px;
+      height: 60px;
+  
+      img {
+        height: 30px;
+      }
     }
   }
+  
 }

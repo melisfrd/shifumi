@@ -20,8 +20,18 @@ $font1: 'jap1';
 // COLORS
 
 $color1: #FFDECF;
-$color2: #516C63;
+$color2: #53796E;
 $color3: #0D5150;
+
+
+// MIXIN
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// MAIN STYLE
 
 body {
   background: url(../img/bg.jpg) center/cover;
@@ -41,6 +51,10 @@ body {
       &:nth-child(3) {
         height: 20vh;
       }
+    }
+
+    @media screen and (max-width: 480px){
+      width: 100%;
     }
   }
 }

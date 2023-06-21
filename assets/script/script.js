@@ -3,6 +3,7 @@ let symbols = document.querySelectorAll(".symbol");
 let winBox = document.querySelector(".win");
 // console.log()
 let choices = [];
+pv2.style.transform = "scaleX(-1)";
 
 // Parcourir la liste symbols
 for (let s of symbols) {
